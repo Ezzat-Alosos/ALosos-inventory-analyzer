@@ -5,12 +5,15 @@ import io
 import analytics, pdf_generator
 
 
+import streamlit as st
+
 st.set_page_config(
     page_title="نظام إدارة المخزون الذكي",
     page_icon="📦",
     layout="wide"
 )
 
+st.title("📦 نظام إدارة المخزون الذكي")
 # دالة توليد الإكسل الاحترافي (مقسمة لصفحات)
 def generate_excel_report(data):
     buffer = io.BytesIO()
