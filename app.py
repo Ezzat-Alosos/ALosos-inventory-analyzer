@@ -4,8 +4,12 @@ import plotly.express as px
 import io
 import analytics, pdf_generator
 
-st.set_page_config(layout="wide")
-st.title("📦 نظام إدارة المخزون الذكي")
+
+st.set_page_config(
+    page_title="نظام إدارة المخزون الذكي",
+    page_icon="📦",
+    layout="wide"
+)
 
 # دالة توليد الإكسل الاحترافي (مقسمة لصفحات)
 def generate_excel_report(data):
@@ -99,3 +103,5 @@ if uploaded_file:
             <p>المهندس المالي: عزت العصعص | للتواصل: 777884468</p>
         </div>
         """, unsafe_allow_html=True)
+    
+
