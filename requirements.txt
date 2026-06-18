@@ -6,3 +6,4 @@ xlsxwriter
 reportlab
 arabic-reshaper
 python-bidi
+matplotlib
